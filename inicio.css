@@ -1,0 +1,175 @@
+.object{
+  object-fit: contain;
+}
+
+body{
+  background-color: #d8d8e0;
+  
+}
+
+.formulario{
+  background-color: white;
+  margin: 15px;
+  padding: 10px;
+}
+
+.botao_form{
+  color: white;
+  background-color: rgb(0, 100, 0, 0.9);
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  border: none;
+  padding: 5px;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.teste{
+  background-color: rgb(216, 216, 224, 0.5);
+}
+
+input:hover{
+  border: 1px solid darkgreen;
+}
+
+textarea:hover{
+  border: 1px solid darkgreen;
+}
+
+.botao_form:hover{
+  background-color:white;
+  border: 1px darkgreen solid;
+  color: black;
+}
+
+label{
+  /*font-weight: bold;*/
+  font-weight: 600;
+}
+
+.textinho{
+  margin: 15px;
+  padding: 10px;
+  line-height: 1.6;
+}
+
+h5{
+  font-weight: 600;
+  color: white;
+  /*margin: 10px;*/
+}
+
+footer{
+  background-color: darkgreen;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+li{
+  color: white;
+}
+
+.text_rodape{
+  margin: 5px;
+}
+
+.col_margin{
+  margin: 0px 5px 0px 0px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.rodape_link{
+  text-decoration: none;
+  color: white;
+}
+
+.rodape_link:hover, active{
+  background-color: white;
+  color: darkgreen;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.intro{
+  background-color: rgb(255, 255, 255, 0.4);
+  margin-top: 30px;
+  padding: 35px;
+}
+
+.origem{
+  margin-top: 30px;
+  padding: 35px;
+}
+
+h6{
+  color: darkgreen;
+  line-height: 2.4;
+}
+
+h4{
+  color: black;
+  line-height: 3;
+}
+
+.col_titulo{
+  justify-content: center;
+  text-align: center;
+}
+
+.origem_img{
+  object-fit: contain;
+  max-height: 400px;
+}
+
+.letra_maior{
+  font-size: 18px;
+}
+
+.container {
+  position: relative;
+  /*width: 50%;*/
+  margin-top:20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(0, 100, 0);
+  border-radius: 5px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  border-radius: 5px;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

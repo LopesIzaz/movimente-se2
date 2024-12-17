@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens HTML</title>
+    <link rel="stylesheet" type="text/css" href="testecss.css">
+    <link rel="icon" type="image/x-icon" href="imgs/favicon (1).ico">
+</head>
+<body>
+    <h2> Teste</h2>
+    
+    <!--imagens: recomenda-se usar o css-->
+    <p><strong><mark>Imagens (jeitos de exporta-las para a pagina): </mark></strong></p>
+
+    <!--imgs in another folder:--> <!--nao deu certo-->
+    <img src="/imgs/cadernos.jpg" alt="HTML5 img" style="width:128px;height:128px;">
+
+    <!--imgs in another server/website, melhor nao, posso nao estar autorizada a copy:-->
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+    <!--imgs floating:-->
+    <p><img src="isis2.jpeg" alt="isis" style="float:right;width:42px;height:42px;">
+        The image will float to the right of the text.</p>
+
+
+    <!--An image map is an image with clickable areas.
+    <map> tag defines an image map
+    areas are defined with one or more <area> tags.   -->
+    <p><strong><mark> Mapa da Imagem: </mark></strong></p>
+
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" style="width:200px;height:200px;">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+    </map>
+    
+    <p><strong><mark> Background Images: </mark></strong></p>
+
+    <p style="background-image: url('isis2.jpeg');"> I might write something here for the image appears. I must improve/boosts my english..</p>
+
+    <p><strong><mark> Picture Element (nao entendi direito): </mark></strong></p>
+
+    <picture>
+        <source media="(min-width: 650px)" srcset="img_food.jpg">
+        <source media="(min-width: 465px)" srcset="img_car.jpg">
+        <img src="workplace.jpg">
+      </picture>
+
+
+    
+
+
+</body>
+</html>

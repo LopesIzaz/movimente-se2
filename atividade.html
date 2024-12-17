@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimente-se </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body class="body_atividade">
+    <!--mudancas: colocar opcao para ouvir,
+     colocar textinhos num container/bloco
+     imgs na ul's
+     ver se consigo colocar v-libras
+     link nas imgs, para quando clicarem, mostrar um textinho 
+     seguir modelo do site guardioes de vida, melhor p ler
+     depois:
+     lemrbar de colocar setinha pra voltar sem tds as telas, visivel e boa area de click
+     perguntar pro andre como linkar em js, pra nao precisar ter varias paginas
+     aprender reaact
+     ver com andre se e bom colocar as transicoes da ong
+        -->
+    
+
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg p-3 navibar">
+            <div class="container-fluid">
+                <!--logo temporaria q sempre aparece-->
+                <a href="inicio.html" class="navbar-brand">
+                    <img src="logo3.png" style="width: 40px; height: 40px;" alt="logo_temporario">
+                </a>
+
+                <!--botao hamburger/toggler-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse flex-grow-1 text-center" id="navbarNavAltMarkup">
+                        <ul class="navbar-nav ms-auto flex-nowrap align-items-center">
+                            <li class="nav-item">
+                                <a href="inicio.html" class="nav-link nav-active m-2 menu-item" aria-current="page">Início</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="atividade.html" class="nav-link m-2 menu-item">Atividade física</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="tutoriais.html" class="nav-link m-2 menu-item">Tutoriais</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="lugares.html" class="nav-link m-2 menu-item">Lugares</a>
+                            </li>
+
+                        </div><!--row-->
+                    
+                </div>
+        </nav>
+
+        <!--atividade fisica-->
+        <!--como fazer (geralzao) (dps ver se especifico em outra pagina, atraves do manuel)-->
+
+        <div class="container textinhos">
+
+            <h3 class="m-4 text-center"> Orientações para a prática de atividades físicas </h3>
+
+            <h4>Sua importância</h4>
+            <p>
+                A prática de atividade física na terceira idade é <strong>importante para reduzir
+                os danos causados pelo tempo</strong>, como o enfraquecimento dos músculos,
+                perda de equilíbrio, perda de agilidade e flexibilidade e de resistência
+                muscular. <br> Praticar atividade física em idades mais avançadas pode melhorar
+                as habilidades de socialização, aumentar a energia, a disposição, a autonomia, 
+                a capacidade para se movimentar e a independência para realizar as atividades do
+                dia a dia. 
+            </p>
+
+            <p>
+                Nesse sentido, a atividade física pode resgatar essa <strong>independência, promover bem-estar
+                e ajudar a desfrutar de uma vida com mais qualidade.</strong>
+                Um idoso mais ativo é também um indivíduo que se sente menos cansado e com menos dores 
+                nas articulações e nas costas. E a <strong>atividade física</strong> não faz bem só para o corpo, ela
+                <strong> é ótima 
+                para a mente também.</strong> Os idosos podem experimentar uma redução dos sintomas de ansiedade e 
+                depressão, além de uma melhora da autoestima, da imagem corporal e dos sentimentos relacionados 
+                à solidão. 
+                
+            </p>
+
+            <!--beneficios-->
+            <h4>Benefícios</h4>
+                <ul>
+                    <li> Auxilia no <strong>controle da pressão arterial</strong> e <strong>reduz os riscos de diabetes.</strong></li>
+                    <br>
+                    <li> <strong>Protege os ossos e as articulações</strong>, além de auxiliar na prevenção de osteoporose e sarcopenia.</li>
+                    <br>
+                    <li> Aumenta o <strong>condicionamento físico, a mobilidade e o equilíbrio</strong>.</li>
+                    <br>
+                    <li> <strong>Fortalece o corpo de modo geral</strong>, contribuindo para a diminuição dos quadros de dor em geral e de quedas.</li>
+                    <br>
+                    <li>Ajuda no <strong>controle do peso</strong>.</li>
+                    <br>
+                    <li> <strong>Diminui sintomas de ansiedade e estresse</strong> e contribui para a <strong>diminuição do risco de quadros de demência.</strong></li>
+                    <br>
+                    <li> Contribui para a <strong>autonomia</strong> e a independência e aumenta o <strong>contato social</strong>.</li>
+                    <br>
+                    <li> Melhora a <strong>disposição</strong> e a <strong>qualidade do sono</strong>.</li>
+                    <br>
+                    <li> Meio para <strong>manter ou aumentar massa muscular</strong> nos idosos.</li>
+                </ul>
+            </p>
+
+            <div class="container rounded supervisao">
+                <h4>Supervisão de um especialista</h4>
+                <p>
+                    Além de agregar todos os benefícios citados acima, é essencial que a prática recorrente
+                    de atividades físicas na terceira idade tenha impacto positivo no dia a dia do idoso e,
+                    por isso, <strong>é importante que antes de iniciar os exercícios haja um acompanhamento 
+                    </strong>médico.
+                    É através desta avaliação que o profissional poderá avaliar as funções corporais e motoras
+                    básicas do idoso para recomendar de forma mais personalizada a modalidade, intensidade, 
+                    frequência e duração da atividade a ser realizada.
+                    Além disso, para o início da prática de uma nova atividade física, o médico pode sugerir 
+                    a realização de exames de rotina e/ou de imagem.
+
+                </p>
+            </div>
+
+            
+            <h4>Como praticar</h4>
+
+            <p>
+                Recomenda-se que se <strong>inicie</strong> o programa de atividades físicas com um trabalho 
+                <strong>de baixo impacto
+                e intensidade, fácil realização e de curta duração,</strong> uma vez que a pessoa idosa, geralmente, 
+                não apresenta condicionamento físico desenvolvido e pode ter limitações músculo-esqueléticas. 
+            </p>
+
+            <p>
+                <strong>As principais atividades recomendadas para essa população são os 
+                exercícios aeróbicos, força e resistência muscular, flexibilidade e equilíbrio.
+                </strong>
+            </p>
+
+            <div>
+                <p class="tipos_atividade">
+                    <strong>Atividades aeróbicas:</strong> devem ser de intensidade moderada por 30 minutos diários em cinco 
+                    dias por semana ou ainda atividades vigorosas por 20 minutos em três dias da semana. 
+                </p>
+
+                <div class="row row-cols-2">
+                    <img src="hidro.jpg" alt="Senhoras particando Hidroginastica" class="imagem_teste">
+                    <img src="idoso_aero.avif" alt="idoso correndo" class="imagem_teste">
+                </div>
+            </div><!--teste2-->
+
+            <div>
+                <p class="tipos_atividade">
+                    <strong>Atividades de força muscular:</strong> mostram a importância da prática de oito 
+                    a dez exercícios envolvendo os principais grupos musculares, em dois ou mais dias não 
+                    consecutivos na semana. Para maximizar o desenvolvimento da força, deve-se executar de dez 
+                    a quinze repetições para cada grupo muscular, com um nível de esforço variando de moderado 
+                    a intenso.
+                </p>
+
+                
+                <div class="row row-cols-2">
+                    <img src="condicionamento.jpeg" alt="Senhoras particando Hidroginastica" class="imagem_teste">
+                    <img src="idoso_forca.jpg" alt="idoso correndo" class="imagem_teste">
+                </div>
+                
+            </div><!--forca-->
+
+            <div>
+                <p class="tipos_atividade">
+                    <strong>Trabalho de flexibilidade:</strong> recomenda-se a prática de atividades que 
+                    estimulem a manutenção/aumento desta capacidade em dois dias na semana, com a duração mínima 
+                    de dez minutos em cada dia. Fala-se ainda na realização de exercícios de equilíbrio, no 
+                    intuito de reduzir o risco de lesões causadas por quedas.
+                </p>
+                
+                <div class="row row-cols-2">
+                    <img src="flexibilidade.jpg" alt="Senhoras particando Hidroginastica" class="imagem_teste">
+                    <img src="flexibilidade2.jpg" alt="idoso correndo" class="imagem_teste">
+                </div>
+
+            </div><!--flexibilidade-->
+        
+            <h4>Só posso me exercitar no meu tempo livre?</h4>
+            <p>
+                A resposta e um ressonante: não! Há várias ocasiões em que você pode se movimentar 
+                e cuidar da saúde ao mesmo tempo. Como... 
+            </p>
+
+            <div class="row row-cols-1">
+
+                <div class="col container caixa1">
+                    <p>
+                        <mark><strong>No deslocamento:</strong></mark> 
+                        <strong>sempre que possível, faça seus deslocamentos a pé ou de bicicleta.</strong> 
+                        Você pode fazer esses deslocamentos na sua ida e volta para o mercado, shopping, 
+                        farmácia, Unidade Básica de Saúde, igrejas ou templos religiosos, casa de amigos ou 
+                        familiares, entre outros. Procure fazer esses deslocamentos da forma mais segura e 
+                        agradável possível. 
+                    </p>
+                </div>
+
+                <div class="col container caixa1">
+                    <p>
+                        <mark><strong>No trabalho:</strong></mark>  
+                        você pode optar por subir escadas ao invés de usar o elevador. Ou ainda, 
+                        ser ativo realizando atividades no seu trabalho, como plantar, regar, colher, pescar, 
+                        limpar, varrer, se deslocar caminhando de um lugar a outro. <strong>Se o local em que você 
+                        trabalha oferece atividade física, participe de alguma ou procure locais próximos onde 
+                        seja possível praticar atividade física. </strong>
+                    </p>
+                </div>
+
+                <div class="col container caixa1">
+                    <p>
+                        <mark><strong>Nas tarefas domésticas:</strong></mark> 
+                        <strong>contribuindo com as atividades realizadas no cuidado do lar e 
+                        da família, você se torna uma pessoa fisicamente ativa. </strong> Realize atividades como varrer, 
+                        lavar louça, lavar e passar roupas, organizar as compras, fazer jardinagem, passear com 
+                        animal de estimação, empurrar carrinho de bebê, entre outras.
+                    </p>
+                </div>
+
+                
+                <div class="col container caixa1">
+                    <p>
+                        <mark><strong>No seu tempo livre:</strong></mark>
+                        <strong>reserve algum tempo para fazer atividade física com os amigos, 
+                        com a família ou sozinho, fazendo aquilo de que você gosta.</strong> Você pode caminhar, 
+                        participar de programas orientados de atividade física (musculação, hidroginástica, 
+                        treinamento funcional, pilates, yoga, alongamento ou dança), de jogos ativos (malha, 
+                        exergames, bocha ou sinuca), de esportes (voleibol, peteca, badminton, tênis de mesa 
+                        ou tênis de campo), entre outros.  
+                    </p>
+                </div>
+
+            </div><!--row-->
+
+
+
+            <h4>Exericicios recomendados para os idosos</h4>
+            <div class="row row-cols-1 row-cols-md-2 mt-4">
+
+                <div class="col mb-4">
+                    <div class="card">
+                        <img id="myImg" src="caminhada.webp" alt="Duas senhoras caminhando no parque">
+                        <div class="card-body">
+                            <h5 class="card-title">Caminhada</h5>
+                            <p class="card-text"> O hábito da caminhada diária ajuda a aumentar o bem-estar e a disposição de quem a pratica. Por isso, caminhar alguns minutos por dia ajuda a gerar energia para os músculos, contribui para a respiração, e trabalha a circulação. </p>
+                        </div>
+                    </div>
+                </div><!--col1-->
+  
+
+                <div class="col  mb-2">
+                    <div class="card card_teste">
+                    
+                        <img src="danca.jpg" alt="Duas senhoras caminhando no parque">
+                        <div class="card-body">
+                            <h5 class="card-title">Danca</h5>
+                            <p class="card-text"> A dança também é considerada uma atividade física adequada para os idosos. Durante as aulas, é possível diminuir bloqueios emocionais, manter a interação biopsicossocial, diminuir a hipertensão e melhorar sintomas da depressão. </p>
+                        </div>
+                    </div>
+                </div><!--col4-->
+
+            </div><!--cards-->
+
+            <div class="row row-cols-1 row-cols-md-2">
+
+                <div class="col mb-4">
+                    <div class="card card_teste">
+                        <img src="hidro.jpg" alt="Duas senhoras caminhando no parque">
+                        <div class="card-body">
+                            <h5 class="card-title">Hidroginastica</h5>
+                            <p class="card-text"> a hidroginástica contribui para o fortalecimento muscular, sem causar prejuízos. Além disso, ajuda a desenvolver o sistema cardiorrespiratório e melhorar a coordenação motora. Sendo uma das atividades físicas para idosos de baixo risco, a hidroginástica é ideal para pessoas que sofrem com artrose e osteoporose.</p>
+                        </div>
+                    </div>
+                </div><!--col3-->
+
+                <div class="col  mb-4">
+                    <div class="card">
+                        <img id="myImg" src="alongamento.jpg" alt="Duas senhoras caminhando no parque">
+                        <div class="card-body">
+                            <h5 class="card-title">Alongamento</h5>
+                            <p class="card-text"> Recomendados para melhorar a flexibilidade do corpo, equilíbrio, e controle de dores musculares, os alongamentos podem ser realizados sozinhos ou ao final de outros exercícios. Essa prática é recomendada principalmente para idosos com pouca mobilidade física, que apresentam limitações para realizar atividades mais vigorosas. </p>
+                        </div>
+                    </div>
+                </div><!--col2-->
+
+            </div><!--cards2-->
+
+                    
+        </div><!--tds textos-->
+
+    </div><!--container-fluid-->
+
+    <!--footer-->
+    <footer class="letra_maior">
+        <div class="row row-cols-md-3 row-cols-2 text_rodape">
+          <div class="col">
+            <!--col sobre-->
+            <h5>Sobre</h5>
+            <ul class="footer_ul">
+              <li> <a class="rodape_link" target="_blank" href="Fontes - Movimente-se.pdf"> &rarr; Fontes</a></li>
+              <li> <a class="rodape_link" target="_blank" href="Construção do projeto - textos para feiras.pdf"> &rarr; Construcao do projeto </a></li>
+              <li> <a class="rodape_link" target="_blank" href="Integrantes_movimente-se.pdf"> &rarr; Equipe </a></li>
+            </ul>
+          </div><!--col sobre-->
+  
+          <!--col contato-->
+          <div class="col">
+            <h5>Contato</h5>
+            <ul class="footer_ul">
+              <li class="rodape_link"> movimente.se.contato@gmail.com.br</li>
+              <li class="rodape_link">(19) 98956-2690</li>
+            </ul>
+          </div><!--col contato-->
+  
+          <!--col instituicao-->
+          <div class="col">
+            <h5>Instituição da equipe</h5>
+            <ul class="footer_ul">
+              <li> <a href="https://portal.cmp.ifsp.edu.br/" target="_blank" class="rodape_link"> &rarr; Instituto Federal - Campus Campinas </a></li>
+            </ul>
+          </div>
+          
+        </div><!--row p/ organizar text-->
+  
+        
+      </footer>
+  
+</body>
+</html>

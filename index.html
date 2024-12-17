@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Movimente-se </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body class="body_atividade">
+    <!--mudancas: colocar opcao para ouvir,
+     colocar textinhos num container/bloco
+     imgs na ul's
+     ver se consigo colocar v-libras
+     link nas imgs, para quando clicarem, mostrar um textinho 
+     seguir modelo do site guardioes de vida, melhor p ler
+     depois:
+     lemrbar de colocar setinha pra voltar sem tds as telas, visivel e boa area de click
+     perguntar pro andre como linkar em js, pra nao precisar ter varias paginas
+     aprender reaact
+     ver com andre se e bom colocar as transicoes da ong
+        -->
+    
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg p-3 navibar">
+        <div class="container-fluid">
+            <!--logo temporaria q sempre aparece-->
+            <a href="inicio.html" class="navbar-brand">
+              <img src="logo3.png" style="width: 40px; height: 40px;" alt="logo_temporario">
+            </a>
+
+            <!--botao hamburger/toggler-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <div class="collapse navbar-collapse flex-grow-1 text-center" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav ms-auto flex-nowrap align-items-center">
+                        <li class="nav-item">
+                            <a href="inicio.html" class="nav-link nav-active m-2 menu-item" aria-current="page">Início</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="atividade.html" class="nav-link m-2 menu-item">Atividade física</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="tutoriais.html" class="nav-link m-2 menu-item">Tutoriais</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="lugares.html" class="nav-link m-2 menu-item">Lugares</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="projeto/CALENDARIO.html" class="nav-link m-2 menu-item">Calendário</a>
+                      </li>
+                        
+
+                    </div><!--row-->
+                
+            </div>
+    </nav> <!--end navbar-->
+
+    <!--carousel-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <!--<ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>-->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100 altura" src="slideshow1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <a href="atividade.html">
+              <img class="d-block w-100" src="slideshow2.jpg" alt="Second slide">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="lugares.html">
+              <img class="d-block w-100" src="slideshow3.jpg" alt="Third slide">
+            </a>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+      </div>
+
+    <!--end carousel-->
+
+      <!--div intro-->
+    <div class="intro">
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col col_titulo">
+          <h6>Movimente-se</h6>
+
+          <h4>Introdução</h4>
+
+        </div><!--col titulos-->
+
+      <div class="col letra_maior">
+        <p>
+          Segundo o IBGE (Instituto Brasileiro de Geografia e Estatística), o total de pessoas com 65 anos 
+          ou mais no país é de 22.169.101. Contudo, apenas 40,5% desse total (aproximadamente 9 milhões) 
+          pratica algum tipo de atividade física. 
+        </p>
+
+        <p>
+          A falta de exercícios pode trazer diversos malefícios, como maior propensão a doenças crônicas 
+          não transmissíveis, que afetam grande parte da população idosa. De acordo com pesquisas do 
+          Ministério da Saúde, 25,1% dos idosos têm diabetes, 18,7% são obesos, 57,1% têm hipertensão e 
+          66,8% apresentam excesso de peso
+        </p>
+
+        <p>
+          Para mudar esse cenário, é necessário promover a importância dos cuidados com a saúde física 
+          desse grupo. Por isso, esta plataforma foi criada. Seu objetivo é reunir informações qualificadas, 
+          obtidas em artigos e documentos do Ministério da Saúde, para democratizar o ensino sobre o bem-estar 
+          físico na terceira idade, além de fornecer recursos para colocá-lo em prática.   
+        </p>
+      </div><!--col texto intro-->
+
+    </div><!--row-->
+    </div><!--end intro-->
+
+    <!--origem do projeto-->
+
+    <div class="origem">
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col col_titulo">
+
+          <h4 style="color: darkgreen;">Origem</h4>
+          <p class="textinho letra_maior">
+            A plataforma teve origem na percepção da falta de instrumentos que incentivam e democratizam a prática de atividades físicas na terceira idade. Depois de identificada essa realidade, o próximo passo foi conhecer mais sobre o assunto. Por exemplo, descobrir as principais razões que levavam os diferentes grupos de idosos a não se exercitarem e as principais maneiras de tentar mudar esse cenário. Finalmente, usamos o que foi aprendido na ferramenta web, fazendo com que o ensino e a prática de atividades físicas na terceira idade se tornassem acessíveis a todos.
+             
+          </p>
+
+        </div><!--col titulos-->
+
+        <div class="col">
+          <img class="origem_img img-fluid" src="origem_plataforma.jpg" alt="origem da plataforma">
+        </div><!--col img-->
+      </div><!--row-->
+    </div><!--origem-->
+
+    <!--overlay-->
+    <h4 style="text-align: center; color: darkgreen;">Nossos valores</h4>
+    <div class="row row-cols-md-3 row-cols-1">
+
+      <div class="col">
+        <div class="container" style="justify-content: center; text-align: center;">
+          <img src="empatia_idoso.jpg" alt="Avatar" class="image">
+          <div class="overlay">
+            <div class="text">Empatia</div>
+          </div>
+        </div><!--container-->
+      </div>
+
+      <div class="col">
+        <div class="container" style="justify-content: center;">
+          <img src="determinacao.jpg" alt="Avatar" class="image">
+          <div class="overlay">
+            <div class="text">Determinação</div>
+          </div>
+        </div><!--container-->
+      </div>
+
+      <div class="col">
+        <div class="container" style="justify-content: center;">
+          <img src="constancia.jpg" alt="Avatar" class="image">
+          <div class="overlay">
+            <div class="text">Constância</div>
+          </div>
+        </div><!--container-->
+      </div>
+  </div><!--row-->
+
+
+    <!--contato-->
+    <div>
+      <img src="contato5.jpg" class="img-fluid" alt="comeco_ptcontato">
+    </div>
+
+    <div class="row row-cols-1 row-cols-lg-2">
+
+      <div class="col">
+          <form class="formulario">
+
+            <div class="m-3">
+              <label for="exampleInputEmail1" class="form-label">Seu nome</label>
+              <input type="text" class="form-control teste" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+
+            <div class="m-3">
+              <label for="exampleInputEmail" class="form-label">Seu E-mail</label>
+              <input type="email" class="form-control teste" id="exampleInputEmail1">
+            </div>
+
+            <div class="m-3">
+              <label for="exampleInputEmail" class="form-label">Seu Whatszapp com DDD</label>
+              <input type="tel" class="form-control teste" id="exampleInputEmail1">
+            </div>
+
+            <div class="m-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Sua mensagem</label>
+              <textarea class="form-control teste" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          
+            <div class="m-3">
+              <button type="button"  class="botao_form">Enviar</button>
+            </div>
+          </form>
+        </div><!--col form-->
+      
+
+      <!--textinho-->
+      <div class="col">
+        <div class="textinho">
+          <h2 style="color: darkgreen;">Movimente-se</h2>
+
+            <p class="letra_maior">
+              Nós somos alunos do Instituto Federal de Ciência, Educação e Tecnologia de São Paulo, Campus Campinas. Nesta instituição, desenvolvemos um projeto cujo produto final foi este site. A ferramenta web foi produzida durante o ano de 2024 pelos estudantes Izabela, Mikael e Soffia, cursando o Ensino Médio integrado ao técnico de informática. Se quiser, entre em contato conosco por meio do e-mail e telefone abaixo! Ficaríamos muito contentes com sua avaliação!
+            </p>
+
+            <p class="letra_maior">
+              <strong>Dúvidas Gerais</strong> <br>
+              movimente.se.contato@gmail.com.br <br>
+              (19) 98956-2690 <br>
+            </p>
+        </div><!--div textinhos-->
+      </div><!--col textinhos-->
+    </div><!--div row-->
+
+    <!--footer-->
+    <footer class="letra_maior">
+      <div class="row row-cols-md-3 row-cols-2 text_rodape">
+        <div class="col">
+          <!--col sobre-->
+          <h5>Sobre</h5>
+          <ul>
+            <li> <a class="rodape_link" href="Fontes - Movimente-se.pdf" target="_blank"> &rarr; Fontes</a></li>
+            <li> <a class="rodape_link" target="_blank" href="Construção do projeto - textos para feiras.pdf"> &rarr; Construção do projeto </a></li>
+            <li> <a class="rodape_link" target="_blank" href="Integrantes_movimente-se.pdf"> &rarr; Equipe </a></li>
+          </ul>
+        </div><!--col sobre-->
+
+        <!--col contato-->
+        <div class="col">
+          <h5>Contato</h5>
+          <ul>
+            <li> movimente.se.contato@gmail.com.br</li>
+            <li>(19) 98956-2690</li>
+          </ul>
+        </div><!--col contato-->
+
+        <!--col instituicao-->
+        <div class="col">
+          <h5>Instituição da equipe</h5>
+          <ul>
+            <li> <a href="https://portal.cmp.ifsp.edu.br/" target="_blank" class="rodape_link"> &rarr; Instituto Federal - Campus Campinas </a></li>
+          </ul>
+        </div>
+        
+      </div><!--row p/ organizar text-->
+    </footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

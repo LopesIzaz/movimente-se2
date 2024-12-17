@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimente-se</title>
+    <link rel="stylesheet" href="base.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body class="body_atividade">
+    <!--mudancas: colocar opcao para ouvir,
+        colocar textinhos num container/bloco
+        imgs na ul's
+        ver se consigo colocar v-libras
+        link nas imgs, para quando clicarem, mostrar um textinho 
+        seguir modelo do site guardioes de vida, melhor p ler
+        depois:
+        lemrbar de colocar setinha pra voltar sem tds as telas, visivel e boa area de click
+        perguntar pro andre como linkar em js, pra nao precisar ter varias paginas
+        aprender reaact
+        ver com andre se e bom colocar as transicoes da ong
+
+        uma das principais razoes pela inatividade pelos idosos e a falta de interresse e de companhia -> tentar fazer algo interativo, como 12 pessoas ja terminaram isso, encontrar amgs, etc -> se der
+        -->
+    
+
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg p-3 navibar">
+            <div class="container-fluid">
+                <!--logo temporaria q sempre aparece-->
+                <a href="inicio.html" class="navbar-brand">
+                    <img src="logo3.png" style="width: 40px; height: 40px;" alt="logo_temporario">
+                </a>
+
+                <!--botao hamburger/toggler-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse flex-grow-1 text-center" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav ms-auto flex-nowrap align-items-center">
+                        <li class="nav-item">
+                                <a href="inicio.html" class="nav-link nav-active m-2 menu-item" aria-current="page">Início</a target="_blank" class="botoes">
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="atividade.html" class="nav-link m-2 menu-item">Atividade física</a target="_blank" class="botoes">
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="tutoriais.html" class="nav-link m-2 menu-item">Tutoriais</a target="_blank" class="botoes">
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="lugares.html" class="nav-link m-2 menu-item">Lugares</a target="_blank" class="botoes">
+                            </li>
+
+                </div><!--row-->
+                    
+            </div>
+        </nav>
+    
+    <h3 class="lugares_h3">Lugares</h3>
+
+    <div class="container">
+        <table class="table table-striped">
+
+            <thead>
+                <tr>
+                    <th>Cidades</th>
+                    <th>Opções</th>
+                    <th>Informações</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Americana</td>
+                    <td>Atividades fornecidas pela prefeitura</td>
+                    <td> 
+                        <a target="_blank" class="botoes" href="https://www.americana.sp.gov.br/americana-index.php?a=secretaria_11_form&f=3">Site</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Americana</td>
+                    <td> Centro de Integracao e Valorizacao do Idoso</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigAdIBCDk0MDNqMGo3qAIAsAIA&um=1&ie=UTF-8&fb=1&gl=br&sa=X&geocode=KfFx6S7Jm8iUMQcUSzChSp2B&daddr=R.+Maj.+Rehder,+650+-+Centro,+Americana+-+SP,+13465-390">Localização</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Americana</td>
+                    <td> Fisioterapia individualizada</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://julianamvergna.com.br/fisioterapia-individualizada-para-idosos-em-americana-nova-odessa-e-santa-barbara-doeste-sp/">Site</a">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Americana</td>
+                    <td>Acqua Fitness</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.acquafitnessamericana.com.br/">Site</a>
+                    </td>
+                </tr>
+
+                <!--arthur nogueira-->
+                <tr>
+                    <td> Arthur Nogueira</td>
+                    <td>Lagoa dos Passaros</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.google.com/maps/place/Parque+Lagoa+dos+P%C3%A1ssaros/@-22.5796285,-47.1685071,17z/data=!3m1!4b1!4m6!3m5!1s0x94c88cfda4d32165:0xf614d71455817ca0!8m2!3d-22.5796285!4d-47.1685071!16s%2Fg%2F1pzs97bsb?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">Localização</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Arthur Nogueira</td>
+                    <td>Academia RN Sport</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.instagram.com/academiarnsport/">Rede Social</a>
+                    </td>
+                </tr>
+
+                <!--campinas-->
+                <tr>
+                    <td> Campinas</td>
+                    <td>Atividades gratuitas</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://horacampinas.com.br/campineiro-de-60-tem-varias-opcoes-gratuitas-de-pratica-esportiva-confira/">Site</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Campinas</td>
+                    <td>Centro de Vivencias dos Idosos</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://redeglobo.globo.com/sp/eptv/chegaai/noticia/confira-as-atividades-gratuitas-do-centro-de-vivencia-do-idoso-de-campinas.ghtml">Site</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Campinas</td>
+                    <td>Atividades gratuitas</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://campinas.com.br/bem-estar/2024/01/veja-opcoes-de-aulas-esportivas-gratuitas-em-campinas/">Site</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Campinas</td>
+                    <td>Sesc</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.sescsp.org.br/unidades/campinas/">Site</a>
+                    </td>
+                </tr>
+
+                <!--cosmopolis-->
+                <tr>
+                    <td> Cosmopolis</td>
+                    <td>Clube da Terceira Idade</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.facebook.com/terceiraidadecosmopolis/">Rede Social</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Cosmopolis</td>
+                    <td>Academia Biofitness</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.biofitnesscosmopolis.com.br/">Site</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Engenheiro Coelho</td>
+                    <td>Grupo Alegria de Viver</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://portalon.com.br/engenheirocoelho/grupo-de-engenheiro-coelho-aposta-em-qualidade-de-vida-para-terceira-idade/">Site</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Engenheiro Coelho</td>
+                    <td> Academia Berton Fitness</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.facebook.com/people/Academia-Berton-Fitness/100042947514556/">Rede social</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Holambra</td>
+                    <td>Grupo Reviver</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://portalon.com.br/holambra/projeto-de-holambra-aposta-em-qualidade-de-vida-para-terceira-idade/">Site</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Holambra</td>
+                    <td>Intense</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.instagram.com/intense.holambra/">Rede Social</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Hortolandia</td>
+                    <td>Centro de Covivencia da Melhor Idade</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.instagram.com/explore/locations/456021054751130/centro-de-convivencia-da-melhor-idade-hortolandia/recent/">Rede social</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Hortolandia</td>
+                    <td>Studio Veroni Pilates</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.instagram.com/studioveroni/">Rede social</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Indaiaituba</td>
+                    <td> Espaço Bem Viverjacinto Bito</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.instagram.com/explore/locations/484563042329352/espaco-bem-viverjacinto-bito-indaiatuba/">Rede Social</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Indaiaituba</td>
+                    <td> Funssol</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.indaiatuba.sp.gov.br/funssol/programas-e-projetos/atendimento-3a-idade/">Site</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Indaiaituba</td>
+                    <td> Academia 40+</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.instagram.com/40maisindaiatuba/">Rede Social</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Itatiba</td>
+                    <td> Centro de Convivencia da Idoso</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.itatiba.sp.gov.br/fss/terceira-idade">Site</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Itatiba</td>
+                    <td> Centros esportivos</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.itatiba.sp.gov.br/secretarias/esportes/academias-e-parques-infantis">Site</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Jaguariuna</td>
+                    <td> Programa Viva Melhor</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.canva.com/design/DAEnWzc6UIk/ibLzj08eNQrsoufyLO2-VQ/view?website#2">Inscricao</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Jaguariuna</td>
+                    <td> Escola das artes</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://municipio.jaguariuna.sp.gov.br/turismo/projetos/5/escola-das-artes.html">Site</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Morungaba</td>
+                    <td> Grupo Voltar a Viver</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.facebook.com/prefeituradaestanciademorungaba/posts/a-melhor-idade-%C3%A9-a-sua-seu-melhor-momento-%C3%A9-agorao-grupo-voltar-a-viver-sempre-e/448958831129354/">Rede Social</a target="_blank" class="botoes">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Morungaba</td>
+                    <td> Parque Municipal de Morungaba</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.google.com/maps/dir//Morungaba+-+SP,+13260-000/@-22.880473,-46.8873217,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94c9298abc217497:0x89a366b51565fcde!2m2!1d-46.8049201!2d-22.8804942?hl=pt-BR&entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">Localização</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Nova Odessa</td>
+                    <td> Clube da Melhor Idade</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.instagram.com/explore/locations/296208609/clube-da-melhor-idade-fundo-social-de-solidariedade-de-nova-odessa/">Rede Social</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Nova Odessa</td>
+                    <td> Parque Ecológico Isidoro Bordon</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.google.com/maps/place/Parque+Ecol%C3%B3gico+Isidoro+Bordon/@-22.7785732,-47.304437,15z/data=!4m6!3m5!1s0x94c899cd21040461:0xb7613e0119a4b614!8m2!3d-22.7785732!4d-47.304437!16s%2Fg%2F11c45r_15s?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">Localização</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Paulinia</td>
+                    <td> Centro Dia para Pessoa Idosa</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.paulinia.sp.gov.br/portal/noticias/0/3/7446/prefeitura-de-paulinia-inaugura-centro-dia-para-pessoa-idosa#:~:text=O%20Centro%20Dia%20do%20Idoso%20est%C3%A1%20localizado%20na%20Rua%20Arist%C3%B3teles,feira%2C%20das%208h%20%C3%A0s%2017h.">Site</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Paulinia</td>
+                    <td> Doctorfit Paulinia</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.instagram.com/doctorfit_paulinia/">Rede Social</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Paulinia</td>
+                    <td> Parque Zeca Malavazzi</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.google.com/maps/dir//R.+Aparai,+92+-+Jardim+de+Itapoan,+Paul%C3%ADnia+-+SP,+13140-232/@-22.7630839,-47.2275145,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94c895583f74b313:0xb450350eb7071c3b!2m2!1d-47.1451129!2d-22.763105?hl=pt-BR&entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">Localização</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Pedreira</td>
+                    <td> Atividades dos grupos dos Postos de Saude</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://pedreira.sp.gov.br/noticias/saude/atividades-dos-grupos-da-terceira-idade-dos-postos-de-saude-de-pedreira">Site</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Pedreira</td>
+                    <td> Nucleo de Convivência para Idosos</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.facebook.com/nci.pedreira/?locale=pt_BR">Rede Social</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Pedreira</td>
+                    <td> Praça Angelo Ferrari</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.google.com/maps/dir//R.+XV+de+Novembro,+917-1013,+Pedreira+-+SP,+13920-000/@-22.7446534,-46.98401,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94c8dea0f32a3ca5:0xdef79ac22b4da82!2m2!1d-46.9016084!2d-22.7446745?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">Localização</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Santa Barbara d'Oeste</td>
+                    <td>Luciana Lino cafs Academia</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.instagram.com/lucianalinocafs/">Rede Social</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Santa Barbara d'Oeste</td>
+                    <td>SESI</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://santabarbara.sesisp.org.br/catsesisantabarbara">Site</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Santa Barbara d'Oeste</td>
+                    <td>SESI</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.google.com/maps/dir//R.+do+Estanho,+s%2Fn+-+Vila+Mollon+IV,+Santa+B%C3%A1rbara+d'Oeste+-+SP,+13456-520/@-22.7512074,-47.4502503,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94c89bf70cb3e87f:0xbfdb9b8bd41220a6!2m2!1d-47.3678487!2d-22.7512285?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">Localização</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Santo Antonio de Posse</td>
+                    <td>Corpo e Vida Pilates e Bem Estar</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.facebook.com/corpoevidapilatesebemestar/">Rede Social</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Santo Antonio de Posse</td>
+                    <td>Bosquinho</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.google.com/maps/dir//R.+Pref.+Pedro+Ferreira+Alves,+Santo+Ant%C3%B4nio+de+Posse+-+SP,+13830-000/@-22.6072179,-47.0075383,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x94c8e423237ed3f1:0xeaa16dcdadeb3f91!2m2!1d-46.9251367!2d-22.6072389?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">Localização</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Santo Antonio de Posse</td>
+                    <td>Praca Cel. David Batista</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.google.com/maps/dir/-22.8982784,-47.0482944/Pra%C3%A7a+Cel.+David+Batista+-+14+-+PRA%C3%87A+DA+MARTIZ,+Santo+Ant%C3%B4nio+de+Posse+-+SP,+13830-000/@-22.7512115,-47.1486216,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94c8e419b1a56cbf:0xc2c2575a65414460!2m2!1d-46.9194057!2d-22.6060974?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">Localização</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Sumare</td>
+                    <td>Centro de Convivencia da Terceira Idade</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.google.com/maps/dir//Av.+Brasil,+1111+-+Jardim+Nova+Veneza,+Sumar%C3%A9+-+SP,+13177-050/@-22.811773,-47.3066714,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94c8bdc2b1a61685:0x7edfd65a3429ec8a!2m2!1d-47.2243293!2d-22.8117465?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">Localização</a>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td> Sumare</td>
+                    <td>Biodelta Academia</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://biodelta.com.br/clinica/">Site</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Sumare</td>
+                    <td>Bosque dos Lagos Cidade Orquídea</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.google.com/maps/dir//R.+Piracanjuba,+2+-+Jardim+Dall'orto,+Sumar%C3%A9+-+SP,+13178-080/@-22.8021803,-47.3006532,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94c8bdae0013d397:0xd2541586029336be!2m2!1d-47.2182516!2d-22.8022015?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">Localização</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Valinhos</td>
+                    <td>Centro do Idoso</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.valinhos.sp.gov.br/portal/secretarias-paginas/130/programa-de-atendimento-ao-idoso/">Site</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Valinhos</td>
+                    <td>40+ Academia em Valinhos</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.facebook.com/academia40valinhos/?locale=pt_BR">Rede Social</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Valinhos</td>
+                    <td>Pure Pilates</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.purepilates.com.br/valinhos/centro">Site</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Vinhedo</td>
+                    <td>Convivio Bem Viver</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.vinhedo.sp.gov.br/portal/noticias/0/3/17518/prefeitura-de-vinhedo-retoma-atividades-do-programa-convivio-bem-viver-para-idosos">Site</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Vinhedo</td>
+                    <td>Pure Pilates</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.purepilates.com.br/vinhedo/jardim-italia">Site</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Vinhedo</td>
+                    <td>RK Academia</td>  
+                    <td>
+                        <a target="_blank" class="botoes" href="https://www.instagram.com/rk_academia/">Rede Social</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <!--footer-->
+    <footer class="letra_maior">
+        <div class="row row-cols-md-3 row-cols-2 text_rodape">
+          <div class="col">
+            <!--col sobre-->
+            <h5>Sobre</h5>
+            <ul class="footer_ul">
+              <li> <a class="rodape_link footer_li" target="_blank" href="Fontes - Movimente-se.pdf"> &rarr; Fontes</a></li>
+              <li> <a class="rodape_link footer_li" target="_blank" href="Construção do projeto - textos para feiras.pdf"> &rarr; Construcao do projeto </a></li>
+              <li> <a class="rodape_link footer_li" target="_blank" href="Integrantes_movimente-se.pdf"> &rarr; Equipe </a></li>
+            </ul>
+          </div><!--col sobre-->
+  
+          <!--col contato-->
+          <div class="col">
+            <h5>Contato</h5>
+            <ul class="footer_ul">
+              <li class="rodape_link footer_li"> movimente.se.contato@gmail.com.br</li>
+              <li class="rodape_link footer_li">(19) 98956-2690</li>
+            </ul>
+          </div><!--col contato-->
+  
+          <!--col instituicao-->
+          <div class="col">
+            <h5>Instituição da equipe</h5>
+            <ul class="footer_ul">
+              <li class="footer_li"> <a href="https://portal.cmp.ifsp.edu.br/" target="_blank" class="rodape_link"> &rarr; Instituto Federal - Campus Campinas </a></li>
+            </ul>
+          </div>
+          
+        </div><!--row p/ organizar text-->
+  
+      </footer>  
+    
+</body>
+</html>

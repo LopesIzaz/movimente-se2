@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimente-se </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <!--mudancas: colocar opcao para ouvir,
+     colocar textinhos num container/bloco
+     imgs na ul's
+     ver se consigo colocar v-libras
+     link nas imgs, para quando clicarem, mostrar um textinho 
+     seguir modelo do site guardioes de vida, melhor p ler
+     depois:
+     lemrbar de colocar setinha pra voltar sem tds as telas, visivel e boa area de click
+     perguntar pro andre como linkar em js, pra nao precisar ter varias paginas
+     aprender reaact
+     ver com andre se e bom colocar as transicoes da ong
+    -->
+    
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-3">
+        <div class="container-fluid">
+            <!--logo temporaria q sempre aparece-->
+            <a href="inicio.html" class="navbar-brand">
+                <img src="logo3.png" style="width: 40px; height: 40px;" alt="logo_temporario">
+            </a>
+
+            <!--botao hamburger/toggler-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-grow-1 text-center" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ms-auto flex-nowrap align-items-center">
+                    <li class="nav-item">
+                        <a href="inicio.html" class="nav-link nav-active m-2 menu-item" aria-current="page">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="atividade.html" class="nav-link m-2 menu-item">Atividade física</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="tutoriais.html" class="nav-link m-2 menu-item">Tutoriais</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="lugares.html" class="nav-link m-2 menu-item">Lugares</a>
+                    </li>
+
+                    </div><!--row-->
+                
+            </div>
+    </nav>
+
+    <!--textinho-->
+    <h3 class=" m-3 text-center">Tutoriais</h3>
+
+    <p class="textinhos" style="text-align: center;">
+        Nesta parte, você encontrará vídeos com exercícios que aliviam as doenças mais comuns na terceira idade.
+    </p>
+
+
+    <!--tentativa scroll netflix-->
+
+    <h4>Pressão Alta</h4>
+    <div class="scroll-container">
+        <iframe width="440" height="300" src="https://www.youtube.com/embed/LPJ86BzTvko" title="The Most Effective Exercises for High Blood Pressure" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="440" height="300" src="https://www.youtube.com/embed/RtlTt0JNhpI" title="Isometric exercise and blood pressure" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="440" height="300" src="https://www.youtube.com/embed/dbu2bGNZRl4" title="3 Simple Exercises to Help Lower Blood Pressure!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <h4>Artrite</h4>
+    <div class="scroll-container">
+        <iframe width="440" height="300" src="https://www.youtube.com/embed/8TSleFg_Etw?list=PLXKNfcIcSzgXx4x8JP-HUb7nvhy5GmijK" title="Tailored stretching: Shoulder exercises (for arthritis and joint pain)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="440" height="300" src="https://www.youtube.com/embed/nMkxh1Alz2A?list=PLXKNfcIcSzgXx4x8JP-HUb7nvhy5GmijK" title="Tailored stretching: Knee exercises (for arthritis and joint pain)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="440" height="300" src="https://www.youtube.com/embed/sNxyYCaQbFw?list=PLXKNfcIcSzgXx4x8JP-HUb7nvhy5GmijK" title="Tailored stretching: Finger, hand and wrist exercises (for arthritis and joint pain)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="440" height="300" src="https://www.youtube.com/embed/fTUKGwC_-WE?list=PLXKNfcIcSzgXx4x8JP-HUb7nvhy5GmijK" title="Tailored stretching: Neck and back exercises (for arthritis and joint pain)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="440" height="300" src="https://www.youtube.com/embed/XVoaDoOlvZ0?list=PLXKNfcIcSzgXx4x8JP-HUb7nvhy5GmijK" title="Tailored stretching: Elbow and wrist exercises (for arthritis and joint pain)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="440" height="300" src="https://www.youtube.com/embed/H5K55p01AwM?list=PLXKNfcIcSzgXx4x8JP-HUb7nvhy5GmijK" title="Tailored stretching: Hip exercises (for arthritis and joint pain)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="440" height="300" src="https://www.youtube.com/embed/LWGGQYPWPX0?list=PLXKNfcIcSzgXx4x8JP-HUb7nvhy5GmijK" title="Tailored stretching: Ankle, foot and toe exercises (for arthritis and joint pain)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="440" height="300" src="https://www.youtube.com/embed/ccixYgs3vC4?list=PLXKNfcIcSzgXx4x8JP-HUb7nvhy5GmijK" title="Full body stretching: Morning routine (for arthritis and joint pain)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="440" height="300" src="https://www.youtube.com/embed/a4UjN4JikXM?list=PLXKNfcIcSzgXx4x8JP-HUb7nvhy5GmijK" title="Full body stretching: Daytime routine (for arthritis and joint pain)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="440" height="300" src="https://www.youtube.com/embed/6lkVNKbUORw?list=PLXKNfcIcSzgXx4x8JP-HUb7nvhy5GmijK" title="Full body stretching: Evening routine (for arthritis and joint pain)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <h4>Doenças no coração</h4>
+    <div class="scroll-container">
+        <iframe width="440" height="300" src="https://www.youtube.com/embed/b0q8c-aVOes" title="Exercícios para quem tem problemas no coração" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="440" height="300" src="https://www.youtube.com/embed/Ohm56pv85A0" title="Cardiac Rehabilitation Exercises" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="440" height="300" src="https://www.youtube.com/embed/gNUq_rCtbxQ" title="3 Exercises to Improve Heart Health" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+ 
+    <h4>Diabetes</h4>
+    <div class="scroll-container">
+        <iframe width="440" height="300" src="https://www.youtube.com/embed/AnF8j2MLkH4" title="Exercícios de Força para Controlar a Diabetes - CORPO TODO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="440" height="300" src="https://www.youtube.com/embed/8BcPHWGQO44" title="Seated Exercises for Older Adults" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="440" height="300" src="https://www.youtube.com/embed/QvYYiWV3Fjs" title="Do This Exercise 15 Seconds A Day To Lower Glucose by 50 points!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <!--footer-->
+    <footer class="letra_maior">
+    <div class="row row-cols-md-3 row-cols-2 text_rodape">
+        <div class="col">
+        <!--col sobre-->
+        <h5>Sobre</h5>
+        <ul>
+            <li> <a class="rodape_link" target="_blank" href="Fontes - Movimente-se.pdf"> &rarr; Fontes</a></li>
+            <li> <a class="rodape_link" target="_blank" href="Construção do projeto - textos para feiras.pdf"> &rarr; Construção do projeto </a></li>
+            <li> <a class="rodape_link" href="Integrantes_movimente-se.pdf" target="_blank"> &rarr; Equipe </a></li>
+        </ul>
+        </div><!--col sobre-->
+
+        <!--col contato-->
+        <div class="col">
+        <h5>Contato</h5>
+        <ul>
+            <li> movimente.se.contato@gmail.com.br</li>
+            <li>(19) 98956-2690</li>
+        </ul>
+        </div><!--col contato-->
+
+        <!--col instituicao-->
+        <div class="col">
+        <h5>Instituição da equipe</h5>
+        <ul>
+            <li> <a href="https://portal.cmp.ifsp.edu.br/" target="_blank" class="rodape_link"> &rarr; Instituto Federal - Campus Campinas </a></li>
+        </ul>
+        </div>
+        
+    </div><!--row p/ organizar text-->
+    </footer>
+</body>
+
+</html>
